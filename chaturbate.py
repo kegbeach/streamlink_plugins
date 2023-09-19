@@ -16,8 +16,8 @@ API_HLS = "https://chaturbate.com/get_edge_hls_url_ajax/"
 _post_schema = validate.Schema(
     validate.all(
     {
-        "url": validate.text,
-        "room_status": validate.text,
+        "url": str,
+        "room_status": str,
         "success": int
     }
 ))
